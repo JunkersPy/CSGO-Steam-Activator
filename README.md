@@ -1,7 +1,6 @@
 Steam Account CS2 Adder
 This script automates the process of adding Counter-Strike 2 (CS2) to multiple Steam accounts. It logs into each account and attempts to add CS2 to the account's library using the steam.webauth module.
 
-Description
 The script performs the following tasks:
 
 Loads a list of accounts from output.json.
@@ -15,18 +14,7 @@ Checks the response to determine if the game was successfully added.
 If added, the account's username is saved to the verified_accounts.json file.
 After adding CS2 to every two accounts, the script pauses and asks the user if they want to continue.
 Waits for 8 seconds before moving on to the next account to avoid rapid requests.
+
 Prerequisites
 Ensure you have the required libraries installed:
-
-bash
-Copy code
 pip install steam
-Prepare the output.json file with a list of accounts in the following format:
-
-json
-Copy code
-[
-    {"username": "account1", "password": "password1"},
-    {"username": "account2", "password": "password2"},
-    ...
-]
